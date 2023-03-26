@@ -59,13 +59,13 @@ public class Main {
     public static void task4 () {
         System.out.println("Задача 4");
         int vklad = 15000;
-        int month = 0;
+        int month = 1;
         int procenti=0;
         while (vklad<12000000){
+            System.out.println("Месяц "+month+",сумма накоплений равна "+vklad);
             month++;
             procenti=(vklad/100)*7;
             vklad=procenti+vklad;
-            System.out.println("Месяц "+month+",сумма накоплений равна "+vklad);
         }
     }
     public static void task5 () {
@@ -98,8 +98,15 @@ public class Main {
     }
     public static void task7 () {
         System.out.println("Задача 7");
+        int firstFriday=5;
+        int day=0;
+        while (firstFriday<31){
+            System.out.println("Cегодня пятница, "+firstFriday+"-е число.Необходимо подготовить отчет.");
+            firstFriday=firstFriday+7;
+            }
 
-    }
+        }
+
     public static void task8 () {
         System.out.println("Задача 8");
 
