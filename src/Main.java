@@ -99,7 +99,6 @@ public class Main {
     public static void task7 () {
         System.out.println("Задача 7");
         int firstFriday=5;
-        int day=0;
         while (firstFriday<31){
             System.out.println("Cегодня пятница, "+firstFriday+"-е число.Необходимо подготовить отчет.");
             firstFriday=firstFriday+7;
@@ -109,6 +108,19 @@ public class Main {
 
     public static void task8 () {
         System.out.println("Задача 8");
+        int kameta =79;
+        int y =100;
+        int x =200;
+        int yearNow =2023;
+        int years = 0;
+        while (years<(yearNow+y)){
+            years++;
+            if((yearNow-x)<years && years<(yearNow+y) && years%kameta==0){
+                System.out.println(years);}
+        }
+
+        }
+
+
 
     }
-}
