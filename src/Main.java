@@ -113,7 +113,7 @@ public class Main {
         int yearNow =2023;
         int years = 0;
         while (years<(yearNow+y)){
-            years=years+79;
+            years=years+79 ;
             if((yearNow-x)<years && years<(yearNow+y)){
                 System.out.println(years);}
         }
