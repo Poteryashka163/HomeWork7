@@ -27,14 +27,13 @@ public class Main {
     public static void task2 () {
         System.out.println("Задача 2");
         int i =0;
-        int x = 11;
+        int x = 10;
         while (i<10){
             i++;
             System.out.print(i + " ");
         }
         System.out.println();
-        while (x>=2) {
-            x--;
+        for (;x>=1;x--) {
             System.out.print(x + " ");
         }
         System.out.println();
@@ -59,13 +58,13 @@ public class Main {
     public static void task4 () {
         System.out.println("Задача 4");
         int vklad = 15000;
-        int month = 1;
+        int month = 0;
         int procenti=0;
         while (vklad<12000000){
-            System.out.println("Месяц "+month+",сумма накоплений равна "+vklad);
             month++;
             procenti=(vklad/100)*7;
             vklad=procenti+vklad;
+            System.out.println("Месяц "+month+",сумма накоплений равна "+vklad);
         }
     }
     public static void task5 () {
@@ -99,7 +98,7 @@ public class Main {
     public static void task7 () {
         System.out.println("Задача 7");
         int firstFriday=5;
-        while (firstFriday<31){
+        while (firstFriday<=31){
             System.out.println("Cегодня пятница, "+firstFriday+"-е число.Необходимо подготовить отчет.");
             firstFriday=firstFriday+7;
             }
@@ -114,8 +113,8 @@ public class Main {
         int yearNow =2023;
         int years = 0;
         while (years<(yearNow+y)){
-            years++;
-            if((yearNow-x)<years && years<(yearNow+y) && years%kameta==0){
+            years=years+79;
+            if((yearNow-x)<years && years<(yearNow+y)){
                 System.out.println(years);}
         }
 
